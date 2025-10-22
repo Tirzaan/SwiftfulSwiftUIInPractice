@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9976C4F22EA986B600EE8B0F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C4F12EA986B600EE8B0F /* SDWebImageSwiftUI */; };
+		9976C5052EA9905A00EE8B0F /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C5042EA9905A00EE8B0F /* SwiftfulUI */; };
+		9976C5082EA990D100EE8B0F /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 9976C5072EA990D100EE8B0F /* SwiftfulRouting */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9976C4E22EA9851700EE8B0F /* SwiftfulSwiftUIInPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulSwiftUIInPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9976C5052EA9905A00EE8B0F /* SwiftfulUI in Frameworks */,
+				9976C5082EA990D100EE8B0F /* SwiftfulRouting in Frameworks */,
+				9976C4F22EA986B600EE8B0F /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = SwiftfulSwiftUIInPractice;
 			packageProductDependencies = (
+				9976C4F12EA986B600EE8B0F /* SDWebImageSwiftUI */,
+				9976C5042EA9905A00EE8B0F /* SwiftfulUI */,
+				9976C5072EA990D100EE8B0F /* SwiftfulRouting */,
 			);
 			productName = SwiftfulSwiftUIInPractice;
 			productReference = 9976C4E22EA9851700EE8B0F /* SwiftfulSwiftUIInPractice.app */;
@@ -94,6 +106,11 @@
 			);
 			mainGroup = 9976C4D92EA9851700EE8B0F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9976C4F02EA986B600EE8B0F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				9976C5032EA9905A00EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				9976C5062EA990D100EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9976C4E32EA9851700EE8B0F /* Products */;
 			projectDirPath = "";
@@ -332,6 +349,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9976C4F02EA986B600EE8B0F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+		9976C5032EA9905A00EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		9976C5062EA990D100EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9976C4F12EA986B600EE8B0F /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9976C4F02EA986B600EE8B0F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		9976C5042EA9905A00EE8B0F /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9976C5032EA9905A00EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+		9976C5072EA990D100EE8B0F /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9976C5062EA990D100EE8B0F /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9976C4DA2EA9851700EE8B0F /* Project object */;
 }
