@@ -24,7 +24,7 @@ struct ContentView: View {
                     .font(.title)
                     .fontWeight(.bold)
                 ForEach(products) { product in
-                    Text(product.title)
+                    Text(product.category.rawValue)
                 }
             }
         }

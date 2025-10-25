@@ -21,6 +21,26 @@ struct Product: Codable, Identifiable {
     let brand: String?
     let images: [String]
     let thumbnail: String
+    
+    var firstImage: String {
+        images.first ?? Constants.randomImage
+    }
+    
+    static var mock: Product {
+        Product(
+            id: 123,
+            title: "Sample Product",
+            description: "A sample product for testing purposes.",
+            category: .furniture,
+            price: 19.99,
+            discountPercentage: 0,
+            rating: 4.5,
+            stock: 100,
+            brand: "Apple",
+            images: [Constants.randomImage, Constants.randomImage, Constants.randomImage],
+            thumbnail: Constants.randomImage
+        )
+    }
 }
 
 enum Category: String, Codable {
@@ -28,4 +48,10 @@ enum Category: String, Codable {
     case fragrances = "fragrances"
     case furniture = "furniture"
     case groceries = "groceries"
+}
+
+struct ProductRow: Identifiable {
+    let id = UUID().uuidString
+    let title: String
+    let products: [Product]
 }
