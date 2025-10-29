@@ -19,6 +19,21 @@ struct AllAppsView: View {
                         SpotifiyHomeView()
                     }
                 }
+                .tint(.spotitfiyGreen)
+                
+                Button("Open Bumble") {
+                    router.showScreen(.fullScreenCover) { _ in
+                        BumbleHomeView()
+                    }
+                }
+                .tint(.bumbleYellow)
+                
+                Button("Open Netflix") {
+                    router.showScreen(.fullScreenCover) { _ in
+                        BumbleHomeView()
+                    }
+                }
+                .tint(.red)
             }
         }
     }

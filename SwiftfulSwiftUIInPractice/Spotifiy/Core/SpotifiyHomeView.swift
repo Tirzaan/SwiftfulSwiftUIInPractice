@@ -150,6 +150,8 @@ struct SpotifiyHomeView: View {
     }
     
     private func getData() async {
+        guard products.isEmpty else { return }
+        
         do {
             currentUser = try await DatabaseHelper().getUsers().first
             let allProducts = try await DatabaseHelper().getProducts()
